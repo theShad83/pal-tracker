@@ -36,7 +36,7 @@ function main() {
 
     echo "Running migration ..."
 
-    flyway-*/flyway -url="jdbc:mysql://127.0.0.1:63306/$db_name" \
+    flyway -url="jdbc:mysql://127.0.0.1:63306/$db_name" \
         -locations=filesystem:"$script_dir"/databases/tracker \
         -user="$db_username" \
         -password="$db_password" \
